@@ -31,12 +31,10 @@ private:
 		
 	Type type;
 	int radius;
-	float gravity;
+	int gravity;
+	int visitCount;
 
 public:
 	Planet();
-
 	void Display();
-
 };
-

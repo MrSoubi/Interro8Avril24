@@ -4,6 +4,8 @@ using namespace std;
 
 Planet::Planet()
 {
+	visitCount = 0;
+
 	int r = rand() % 100 + 1;
 
 	if (r < TELLURIC_PROB) {

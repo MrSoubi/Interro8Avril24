@@ -128,11 +128,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BigBang.cpp" />
+    <ClCompile Include="Event.cpp" />
     <ClCompile Include="Planet.cpp" />
+    <ClCompile Include="SolarSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BigBang.h" />
+    <ClInclude Include="Event.h" />
     <ClInclude Include="GlobalHeader.h" />
     <ClInclude Include="Planet.h" />
+    <ClInclude Include="SolarSystem.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

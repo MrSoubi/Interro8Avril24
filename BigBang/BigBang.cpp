@@ -1,28 +1,18 @@
-// BigBang.cpp : Ce fichier contient la fonction 'main'. L'exécution du programme commence et se termine à cet endroit.
-//
-
-#include "GlobalHeader.h"
-
-using namespace std;
-
-list<unique_ptr<Planet>> univers;
+#include "BigBang.h"
 
 void GenerateUnivers() {
     for (int i = 0; i < 100; i++) {
-        univers.push_back(make_unique<Planet>());
+        solarSystems.push_back(make_unique<SolarSystem>());
     }
 }
 
-void DisplayUnivers() {
-    for (auto it = univers.begin(); it != univers.end(); it++) {
-        it->get()->Display();
-        cout << endl;
-    }
-}
+//void DisplayUnivers() {
+//    for (auto it = systems.begin(); it != systems.end(); it++) {
+//        it->get()->Display();
+//        cout << endl;
+//    }
+//}
 
-void DeleteUnivers() {
-    univers.clear();
-}
 
 int main()
 {
@@ -30,7 +20,7 @@ int main()
 
     GenerateUnivers();
 
-    DisplayUnivers();
+    //DisplayUnivers();
 
-    DeleteUnivers();
+    //DeleteUnivers();
 }
